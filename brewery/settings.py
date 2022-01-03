@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -89,8 +88,7 @@ WSGI_APPLICATION = 'brewery.wsgi.application'
 #    }
 # }
 
-DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
