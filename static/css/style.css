@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .event-text {
     text-align: center;
 }
-
 
 /* footer */
 
@@ -174,3 +175,84 @@ body {
     background: transparent;
     border: none;
 }
+
+/* index page */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+p {
+    color: #363030;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-weight: 200;
+    color: #363030;
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Logo and heading */
+
+#header-text {
+    font-family: roboto, sans-serif;
+    text-transform: uppercase;
+    color: #363030;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #363030;
+}
+
+/* Beers section */
+
+.diffrent-beers {
+    float: left;
+    margin-left: 470px;
+    margin-top: 60px;
+}
+
+.diffrent-beers>img {
+    height: 250px;
+    width: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#sour-beer {
+    height: 230px;
+    width: 100px;
+}
+
+.underline {
+    border-bottom: 1px solid #363030;
+    width: 60%;
+    display: block;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+#our-vision {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info {
+    font-size: 1.875rem;
+    margin-top: 30px;
+}
+
+
+p {
+    font-size: 1.5625rem;
+    margin-top: 25px;
+}
+
