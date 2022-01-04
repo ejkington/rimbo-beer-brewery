@@ -32,15 +32,19 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["brewery.herokuapp.com", "localhost"]
 
+SITE_ID = 1
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'django_summernote',
