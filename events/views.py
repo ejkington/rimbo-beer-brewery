@@ -3,6 +3,7 @@ from django.views import generic, View
 from .models import Event
 from django.views.generic import TemplateView
 
+
 class EventList(generic.ListView):
     model = Event
     queryset = Event.objects.filter(status=1).order_by("-created_on")
@@ -52,4 +53,8 @@ class EventDetail(View):
 
 class OurBeersView(TemplateView):
     template_name = 'our-beers.html'
+    
+    
+class IndexView(TemplateView):
+    template_name = 'index.html'
     
