@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text">
+                <!-- Post title goes in these h1 tags -->
+                <h1 class="post-title">{{ event.title }}</h1>
+                <!-- Post author goes before the | the post's created date goes after -->
+                <p class="post-subtitle">{{ event.created_on }}</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                <!-- The featured image URL goes in the src attribute -->
+                {% if "placeholder" in post.featured_image.url %}
+                <img src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094" width="100%">
+                {% else %}
+                <img src=" {{ post.featured_image.url }}" width="100%">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <!-- The post content goes inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+                <p class="card-text ">
+                    {{ event.description | safe }}
+                </p>
+               {% if user.is_authenticated %}
+                <section class="form-section">
+                    <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+                        <h2>Book Tour</h2>
+                        <label for="fname">First Name</label>
+                        <input id="fname" name="first_name" type="text" class="text-input" required>
+            
+                        <label for="lname">Last Name</label>
+                        <input id="lname" name="last_name" type="text" class="text-input" required>
+            
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email_address" class="text-input" required>
+                        
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guest" name="guest" class="number-input" min="1" max="10" required>
+
+                        <input class="join-button" type="submit" value="Beer me up!">
+                    </form>
+                </section>
+                {% endif %}
+
+               </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 ">
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block event %}
+<h3 class="event-text"> Hello and welcome to</h3>
+<h3 class="event-text"> Rimbo Beer Brewery Events </h3>
+<p class="event-text"> Please check out our events and if you wish to book an event please register or login above.</p>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for event in event_list %}
+                <div class="col-md-4">
+                    <div class="card-mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if 'placeholder' in event.featured_image.url %}
+                                <img class="card-img-top"
+                                    src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ event.featured_image.url }}">
+                                {% endif %}
+                            </div>
+                            <a href="{% url 'event-detail' event.slug  %}" class="post-link">
+                                <h2 class="card-title">{{ event.title }}</h2>
+                            </a>
+                            <hr />
+                            <p class="card-text text-muted h5">{{ event.created_on }}
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:4 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+
+{%endblock event%}

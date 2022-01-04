@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 class EventList(generic.ListView):
     model = Event
     queryset = Event.objects.filter(status=1).order_by("-created_on")
-    template_name = 'index.html'
+    template_name = 'event.html'
     paginate_by = 6
 
 
@@ -52,3 +52,4 @@ class EventDetail(View):
 
 class OurBeersView(TemplateView):
     template_name = 'our-beers.html'
+    
