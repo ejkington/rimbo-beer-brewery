@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Event
-
+from django.views.generic import TemplateView
 
 class EventList(generic.ListView):
     model = Event
@@ -25,7 +25,7 @@ class EventDetail(View):
             booking.post = event
             booking.save()
         else:
-            booking_form = BookingForm()
+            BookingForm = BookingForm()
         
         return render(
             request,
@@ -49,3 +49,6 @@ class EventDetail(View):
                 'event': event
             },
         )
+
+class OurBeersView(TemplateView):
+    template_name = 'our-beers.html'

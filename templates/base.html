@@ -36,19 +36,19 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'ourbeers' %}">Our Beer</a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Beer</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -77,6 +77,10 @@
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
+
+        {% block our-beers %}
+        <!-- our beers page -->
+        {% endblock our-beers %}
     </main>
     <!--Footer and social media links-->
     <footer id="footer">
@@ -92,9 +96,6 @@
             </li>
             <li>
                 <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visits our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-                <h3>©<br>Niklas Färeborg</h3>
             </li>
         </ul>
     </footer>
