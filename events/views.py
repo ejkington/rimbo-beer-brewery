@@ -23,15 +23,15 @@ class EventDetail(View):
         event = get_object_or_404(queryset, slug=slug)
         booking = event.booked.filter(approved=True)
 
-        booking_form = BookingForm(data=request.POST)
-        if booking_form.is_valid():
-            booking_form.instance.email = request.user.email
-            booking_form.instance.name = request.user.username
-            booking = booking_form.save(commit=False)
-            booking.post = event
-            booking.save()
-        else:
-            BookingForm = BookingForm()
+        #booking_form = BookingForm(data=request.POST)
+        #if booking_form.is_valid():
+        #    booking_form.instance.email = request.user.email
+        #   booking_form.instance.name = request.user.username
+        #    booking = booking_form.save(commit=False)
+        #    booking.post = event
+        #    booking.save()
+        #else:
+        #    BookingForm = BookingForm()
 
         return render(
             request,
@@ -40,7 +40,7 @@ class EventDetail(View):
                 'event': event,
                 'booking': booking,
                 'booked': True,
-                'bookingform': BookingForm()
+            #    'bookingform': BookingForm()
             },
         )
 
