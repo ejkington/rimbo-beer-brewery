@@ -13,14 +13,14 @@ class Event(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     status = models.IntegerField(choices=STATUS, default=0)
-    
+
     class Meta:
         ordering = ['-created_on']
-        
+   
     def __str__(self):
         return self.title
     
-    
+
 class Booked(models.Model):
     booking = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="booked")
     name = models.CharField(max_length=80)
