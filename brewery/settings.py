@@ -32,7 +32,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["brewery.herokuapp.com", "localhost"]
 
-SITE_ID = 1
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+CSRF_TRUSTED_ORIGINS = ['http://*.127.0.0.1']
 
 # Application definition
 
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
     'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -50,9 +53,16 @@ INSTALLED_APPS = [
     'django_summernote',
     'cloudinary',
     'events',
+    'corsheaders',
 ]
 
+SITE_ID = 1 
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
