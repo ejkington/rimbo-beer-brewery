@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{% load crispy_forms_tags %}
+
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -26,34 +28,19 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text ">
-                    {{ event.description | safe }}
-                </p>
-               {% if user.is_authenticated %}
-               {% csrf_token %}
-                <section class="form-section">
-                    <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
-                        <h2>Book Tour</h2>
-                        <label for="fname">First Name</label>
-                        <input id="fname" name="first_name" type="text" class="text-input" required>
-            
-                        <label for="lname">Last Name</label>
-                        <input id="lname" name="last_name" type="text" class="text-input" required>
-            
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email_address" class="text-input" required>
-                        
-                        <label for="guests">Guests</label>
-                        <input type="number" id="guest" name="guest" class="number-input" min="1" max="10" required>
+                {% if user.is_authenticated %}
 
-                        <input class="join-button" type="submit" value="Beer me up!">
-                    </form>
-                </section>
+                <h2>Book this event</h2>
+                <p>Booking as: {{ user.username }}</p>
+                <form method='post'>
+                    {{ booking_form | crispy }}
+                    {% csrf_token %}
+                    <button type='submit' class='btn btn-signup btn-lg'>Book now</button>
+                </form>
+                
                 {% endif %}
-
-               </form>
+               
+            
             </div>
         </div>
     </div>
