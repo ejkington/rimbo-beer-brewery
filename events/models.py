@@ -1,6 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -21,13 +22,14 @@ class Event(models.Model):
         return self.title
     
 
+
 class Booked(models.Model):
     booking = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="booked")
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
-    number_of_guests = models.BooleanField(10)
+    number_of_guests = models.IntegerField(10)
     approved = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Booked {self.body} by {self.name} waiting for approval"
+        return f"Booked {self.booking} by {self.user} waiting for approval"

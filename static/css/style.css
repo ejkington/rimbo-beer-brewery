@@ -97,9 +97,11 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: lightgoldenrodyellow;
+    color: black;
     position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .masthead-image {
@@ -107,19 +109,6 @@ body {
     overflow: hidden;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
 
 .post-link {
     text-decoration: none;
@@ -138,7 +127,7 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: black;
 }
 
 .btn-signup {
@@ -162,19 +151,6 @@ body {
 .link:active {
     color: #23BBBB;
     text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
 }
 
 
@@ -291,3 +267,19 @@ p {
     text-decoration: underline;
 }
 
+/* event detail page */
+.booking-h2 { 
+    text-align: center;
+    text-decoration: underline;
+}
+
+.not-validated-detail {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.underline-detail {
+    border-bottom: 1px solid #363030;
+    width: 100%;
+    display: block;
+}

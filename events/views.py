@@ -32,8 +32,10 @@ class EventDetail(View):
             booking = booking_form.save(commit=False)
             booking.post = event
             booking.save()
-        else:
-            return render(request, "event-detail.html",{
+        return render(
+            request,
+            'event-detail.html',
+            {
                 'event': event,
                 'booking_form': BookingForm(),
             },
@@ -48,7 +50,7 @@ class EventDetail(View):
             request,
             'event-detail.html',
             {
-                'event': event,
+                'EventDetail': EventDetail,
                 'booking_form': BookingForm(),
             },
         )
