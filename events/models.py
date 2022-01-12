@@ -3,7 +3,7 @@ from cloudinary.models import CloudinaryField
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
-
+BOOKED = ((0, "Pending"), (1, "Booked"), (2, "NotBooked"))
 
 class Event(models.Model):
     title = models.CharField(max_length=200)
@@ -29,7 +29,7 @@ class Booked(models.Model):
     email = models.EmailField()
     body = models.TextField()
     number_of_guests = models.IntegerField(10)
-    approved = models.BooleanField(default=False)
+    approved = models.IntegerField(choices=BOOKED, default=2)
 
     def __str__(self):
         return f"Booked {self.booking} by {self.user} waiting for approval"
