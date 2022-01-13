@@ -31,6 +31,12 @@
                 <p class="card-text ">
                     {{ event.description | safe }}
                 </p>
+                {% if booked %}
+                <div class="alert alert-success" role="alert">
+                    Your booking is awaiting approval
+                </div>
+                {% else %}
+
                 {% if user.is_authenticated %}
 
                 <h2 class="booking-h2">Book this event</h2>
@@ -50,6 +56,8 @@
                     </h3>
                 </div>
                 {% endif %}
+                {% endif %}
+
                
             
             </div>

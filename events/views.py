@@ -24,23 +24,15 @@ class EventDetail(View):
         event = get_object_or_404(queryset, slug=slug)
         booking = event.booked.filter(approved=True)
 
-        booking_form = BookingForm(data=request.POST)
-        
-        if booking_form.is_valid():
-            booking_form.instance.email = request.user.email
-            booking_form.instance.name = request.user.username
-            booking = booking_form.save(commit=False)
-            booking.post = event
-            booking.save()
         return render(
             request,
             'event-detail.html',
             {
                 'event': event,
+                "isbooked": False,
                 'booking_form': BookingForm(),
             },
         )
-    
     
     def event(self, request, slug, *args, **kwargs):
         queryset = Event.objects.filter.order_by('-created_on')
@@ -55,6 +47,32 @@ class EventDetail(View):
             },
         )
 
+        def booked(self, request, slug, *args, **kwargs):
+            queryset = Post.objects.filter(status=1)
+            booked = get_object_or_404(queryset, slug=slug)
+        
+        
+        booking_form = BookingForm(data=request.POST)
+        
+        if booking_form.is_valid():
+            booking_form.instance.email = request.user.email
+            booking_form.instance.name = request.user.username
+            booking = booking_form.save(commit=False)
+            booking.post = booked
+            booking.save()
+        else:
+            booking_form = BookingForm()
+            
+        return render(
+            request,
+            "event_detail.html",
+            {
+                "booked": booked,
+                "isbooked": True,
+                "booking_form": BookingForm()
+            },
+        )
+    
 
 """
 View for rendering our beers page
