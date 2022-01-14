@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 BOOKED = ((0, "Pending"), (1, "Booked"), (2, "NotBooked"))
 
+
 class Event(models.Model):
     title = models.CharField(max_length=200)
     slug = models.CharField(max_length=200, unique=True)
@@ -21,8 +22,7 @@ class Event(models.Model):
     def __str__(self):
         return self.title
     
-
-
+    
 class Booked(models.Model):
     booking = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="booked")
     name = models.CharField(max_length=80)

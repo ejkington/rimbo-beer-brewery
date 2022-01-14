@@ -38,27 +38,13 @@ class EventDetail(View):
         queryset = Event.objects.filter.order_by('-created_on')
         event = get_object_or_404(queryset, slug=slug)
 
-        return render(
-            request,
-            'event-detail.html',
-            {
-                'EventDetail': EventDetail,
-                'booking_form': BookingForm(),
-            },
-        )
-
-        def booked(self, request, slug, *args, **kwargs):
-            queryset = Post.objects.filter(status=1)
-            booked = get_object_or_404(queryset, slug=slug)
-        
-        
         booking_form = BookingForm(data=request.POST)
         
         if booking_form.is_valid():
             booking_form.instance.email = request.user.email
             booking_form.instance.name = request.user.username
             booking = booking_form.save(commit=False)
-            booking.post = booked
+            booking.event = event
             booking.save()
         else:
             booking_form = BookingForm()
@@ -67,9 +53,10 @@ class EventDetail(View):
             request,
             "event_detail.html",
             {
-                "booked": booked,
+                "event": event,
+                "booking": booking,
                 "isbooked": True,
-                "booking_form": BookingForm()
+                "booking_form": booking_form
             },
         )
     

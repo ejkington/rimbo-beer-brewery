@@ -41,7 +41,7 @@
 
                 <h2 class="booking-h2">Book this event</h2>
                 <p>Booking as: {{ user.username }}</p>
-                <form method='POST'>
+                <form method='GET' style="margin-top: 1.3em;">
                     {{ booking_form | crispy }}
                     {% csrf_token %}
                     <button type='submit' class='btn btn-signup btn-lg'>Book now</button>
