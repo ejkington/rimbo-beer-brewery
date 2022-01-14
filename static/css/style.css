@@ -283,3 +283,32 @@ p {
     width: 100%;
     display: block;
 }
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:950px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:375px) {
+
+}
+
+.underline {
+    display: none;
+}
+
+#carouselExampleSlidesOnly {
+    margin: 0;
+}
+
+.our-beers {
+    width: 100%;
+    margin-left: 1px;
+}
