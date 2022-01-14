@@ -18,6 +18,3 @@ class BookedAdmin(admin.ModelAdmin):
     list_filter = ('approved',)
     search_fields = ('name', 'email', 'body')
     actions = ['approve_booking']
-
-    def approve_booking(self, request, queryset):
-        queryset.update(approved=True)

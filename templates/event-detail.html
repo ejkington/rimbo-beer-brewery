@@ -31,7 +31,7 @@
                 <p class="card-text ">
                     {{ event.description | safe }}
                 </p>
-                {% if booked %}
+                {% if booking_form.is_valid %}
                 <div class="alert alert-success" role="alert">
                     Your booking is awaiting approval
                 </div>
@@ -40,11 +40,12 @@
                 {% if user.is_authenticated %}
 
                 <h2 class="booking-h2">Book this event</h2>
-                <p>Booking as: {{ user.username }}</p>
-                <form method='GET' style="margin-top: 1.3em;">
-                    {{ booking_form | crispy }}
+                
+                <form method='post' style="margin-top: 1.3em;">
                     {% csrf_token %}
-                    <button type='submit' class='btn btn-signup btn-lg'>Book now</button>
+                    {{ booking_form | crispy }}
+                   
+                    <button type='submit' value="submit" class='btn btn-signup btn-lg'>Book now</button>
                 </form>
                 {% else %}
 
