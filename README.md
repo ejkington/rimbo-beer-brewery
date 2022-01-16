@@ -115,7 +115,7 @@ Text that shows the love for beer and beer making above footer
 
 ###### Our beers.
 
-### PIC OF OURBEERS PAGE
+
 ![ourbeers1](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers1.png)
 ![ourbeers2](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers2.png)
 ![ourbeers3](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers3.png)
