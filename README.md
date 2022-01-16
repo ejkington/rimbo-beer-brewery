@@ -217,7 +217,8 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 
 * JavaScript Validation
 
-* Python Validation
+* Python Validation ![python](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
+* Too save space i only included 1 page of python validation but all code checks out without errors
 
 
 ### Automated Testing
