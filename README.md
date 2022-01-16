@@ -120,6 +120,7 @@ Text that shows the love for beer and beer making above footer
 ![ourbeers2](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers2.png)
 ![ourbeers3](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers3.png)
 ![ourbeers4](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers4.png)
+
 Showcasing pictures of the beers.
 The names of the different beers.
 and a taste review when clicked used jQuery.
@@ -341,7 +342,7 @@ Google - What would i do without it
 All pictures for the site was taken from [https://unsplash.com/]
 The logo in the nav bar was created on [https://www.logomaker.com/]
 
-#Acknowledgments
+## Acknowledgments
 
 Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial, especially in the area of coding standards and best practice.
 My friends and family that suports me the best they can
