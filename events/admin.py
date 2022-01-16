@@ -3,6 +3,10 @@ from django_summernote.admin import SummernoteModelAdmin
 from .models import Event, Booked
 
 
+"""
+Admin for event to add and delete new events 
+"""
+
 @admin.register(Event)
 class EventAdmin(SummernoteModelAdmin):
 
@@ -11,6 +15,9 @@ class EventAdmin(SummernoteModelAdmin):
     list_filter = ('title', 'created_on')
     summernote_fields = ('description')
 
+"""
+Admin for too handle bookings, to approve or disapprove
+"""
 
 @admin.register(Booked)
 class BookedAdmin(admin.ModelAdmin):

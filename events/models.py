@@ -6,6 +6,10 @@ STATUS = ((0, "Draft"), (1, "Published"))
 BOOKED = ((0, "Pending"), (1, "Booked"), (2, "NotBooked"))
 CHOICES = ((0, "1"), (1, "2"), (2, "3"), (3, "4"), (4, "5"), (5, "6"))
 
+"""
+Events model, slug is the identifyer, and featured image is the image thats uploaded to cloudinary and displayed in the view.
+"""
+
 
 class Event(models.Model):
     title = models.CharField(max_length=200)
@@ -22,6 +26,11 @@ class Event(models.Model):
    
     def __str__(self):
         return self.title
+    
+    
+"""
+Model for Booked, Choices is the number of guests with a maximim of 6 guests bookable at time
+"""
     
     
 class Booked(models.Model):
