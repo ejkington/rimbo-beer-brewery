@@ -14,7 +14,7 @@ class EventAdmin(SummernoteModelAdmin):
 
 @admin.register(Booked)
 class BookedAdmin(admin.ModelAdmin):
-    list_display = ('name', 'body', 'approved')
+    list_display = ('name', 'approved')
     list_filter = ('approved',)
     search_fields = ('name', 'email', 'body')
     actions = ['approve_booking']

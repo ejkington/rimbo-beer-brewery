@@ -6,6 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 BOOKED = ((0, "Pending"), (1, "Booked"), (2, "NotBooked"))
 CHOICES = ((0, "1"), (1, "2"), (2, "3"), (3, "4"), (4, "5"), (5, "6"))
 
+
 class Event(models.Model):
     title = models.CharField(max_length=200)
     slug = models.CharField(max_length=200, unique=True)
