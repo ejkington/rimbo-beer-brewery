@@ -213,7 +213,7 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 
 * HTML Validating
 
-* CSS Validating
+* CSS Validating ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/f412670cdc3a07752caa05262757e9d595bd9b5e/Readme/Validators/css_validator.png)
 
 * JavaScript Validation
 
