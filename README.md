@@ -93,7 +93,7 @@ All images and navigation have an alt attributes. This is to make the site easie
 
 ### Footer
 
-![footer](#)
+![footer](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/footer.png)
 
 The footer consists of social media links and will open in a new tab.
 
@@ -106,8 +106,8 @@ I have included descriptions, author, and keywords into the head element to incr
 
 ###### Homepage.
 
-![index1](#)
-![index2](#)
+![index1](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/index1.png)
+![index2](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/index2.png)
 
 A image charrosel pictures from the brewery.
 The brewery motto.
