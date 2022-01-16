@@ -116,14 +116,17 @@ Text that shows the love for beer and beer making above footer
 ###### Our beers.
 
 ### PIC OF OURBEERS PAGE
-
+![ourbeers1](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers1.png)
+![ourbeers2](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers2.png)
+![ourbeers3](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers3.png)
+![ourbeers4](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers4.png)
 Showcasing pictures of the beers.
 The names of the different beers.
 and a taste review when clicked used jQuery.
 
 ###### Events.
 
-### PIC OF EVENS PAGE
+![event](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/event.png)
 
 Showing the current events that the brewery has and when clicked redirects user to a detailed page of the event.
 paginated by 6
@@ -131,7 +134,7 @@ paginated by 6
 
 ###### Events Detail.
 
-### PIC OF EVENT DETAILS PAGE
+![eventdetail](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/eventdetail1.png)
 
 * Showing the details of the event clicked.
 * If not logged in a text is displaying prompting the user to logg in or register.
@@ -139,9 +142,13 @@ paginated by 6
 * Text diplaying "your booking is waiting approval if form is valid.
 * Submit button in the form
 
+![eventdetaillogedin](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/eventsdetaillogedin.png)
+
 ### Logg in and Out
 
-### PIC OF LOGIN PAGE
+![login](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/login.png)
+![logout](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/logout.png)
+![signup](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/regrister.png)
 
 ###### Login / Logout
 
@@ -155,12 +162,15 @@ To sign in the user must provide a) a registered username and b) the password fo
 
 User Sign out
 
-### PIC OF LOGOUT
+
 A signed in user can sign out by clicking on the Sign out link on the navigation bar. The user simply needs to confirm the action by clicking on the Sign out button on the page. and an message is displayed that the user has signed out.
 
 ## Admin page
 
-#### PIC OF ADMINS PAGE
+![admin](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/admin1.png)
+![adminevent](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/adminevent.png)
+![adminbookings](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/adminbookings.png)
+
 
 * This page is for the admin to manage the bookings made by user and to create and manage events
 * Can be used to approve and disapprov bookings
