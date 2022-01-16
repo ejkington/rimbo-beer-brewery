@@ -76,7 +76,7 @@ The website will consist of 4 separate pages, not including the register/logg in
 
 ### Navigation Bar
 
-### PIC OF NAV BAR
+![navbar](#)
 
 The navigation bar.
 The navigation links directs the user to the correct page of the website.
@@ -93,7 +93,7 @@ All images and navigation have an alt attributes. This is to make the site easie
 
 ### Footer
 
-### PIC OF FOOTER
+![footer](#)
 
 The footer consists of social media links and will open in a new tab.
 
@@ -106,7 +106,8 @@ I have included descriptions, author, and keywords into the head element to incr
 
 ###### Homepage.
 
-### PIC OF INDEX PAGE
+![index1](#)
+![index2](#)
 
 A image charrosel pictures from the brewery.
 The brewery motto.
