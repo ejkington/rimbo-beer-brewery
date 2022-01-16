@@ -76,7 +76,7 @@ The website will consist of 4 separate pages, not including the register/logg in
 
 ### Navigation Bar
 
-![navbar](#)
+![navbar](https://github.com/ejkington/rimbo-beer-brewery/blob/93ec6f9f27101f70fd435db49048d216c474eb58/Readme/Images/Navbar.png)
 
 The navigation bar.
 The navigation links directs the user to the correct page of the website.
