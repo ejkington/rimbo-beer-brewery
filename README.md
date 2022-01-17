@@ -223,8 +223,9 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * JavaScript/jQuery Validation ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab5b89868dac3390424039591a0225944c32956b/Readme/Validators/jshintvalidator.png)
 
 [https://extendsclass.com/python-tester.html]
-* Python Validation ![python](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
-* Too save space i only included 1 page of python validation but all code checks out without errors
+* Python Validation ![python1](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
+* ![python2](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python2.png)
+* ![python3](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python3.png)
 
 
 # Browser Compatibility
