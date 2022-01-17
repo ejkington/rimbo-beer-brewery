@@ -223,17 +223,9 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * JavaScript/jQuery Validation ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab5b89868dac3390424039591a0225944c32956b/Readme/Validators/jshintvalidator.png)
 
 [https://extendsclass.com/python-tester.html]
-* Python Validation ![python](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
-* Too save space i only included 1 page of python validation but all code checks out without errors
-
-
-### Automated Testing
-
-#### Jest
-
-#### Jest results 
-
-#PIC OF JEST TEST
+* Python Validation ![python1](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
+* ![python2](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python2.png)
+* ![python3](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python3.png)
 
 
 # Browser Compatibility
@@ -267,7 +259,7 @@ Admin booked  | admin approve users request to book event | users request is app
 # Deployment 
 
 Deployment
-Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application. Code Institute also provides a summary of similar process steps here : CI Cheat Sheet
+Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application. 
 
 How to Clone the Repository
 Create Application and Postgres DB on Heroku
@@ -339,7 +331,7 @@ Scroll down the page and choose to either Automatically Deploy each time changes
 The application can be run from the Application Configuration page by clicking on the Open App button.
 The live link for this project is (#HEROKU)
 
-#Final Deployment steps
+## Final Deployment steps
 
 Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows :
 
@@ -372,7 +364,7 @@ The logo in the nav bar was created on [https://www.logomaker.com/]
 
 ## Acknowledgments
 
-Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial
-My friends and family that suports me the best they can
+* Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial.
+* My friends and family that suports me the best they can
 
 
