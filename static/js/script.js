@@ -7,22 +7,22 @@ $(document).ready(function(){
 
   $(".lager").click(function(){
       $(".lager-p").slideToggle("slow");
-  })
+  });
 
   $(".ipa").click(function(){
     $(".ipa-p").slideToggle("slow");
-  })
+  });
 
   $(".sour").click(function(){
     $(".sour-p").slideToggle("slow");
-  })
+  });
 
   $(".wheat").click(function(){
     $(".wheat-p").slideToggle("slow");
-  })
+  });
 
   $(".stout").click(function(){
     $(".stout-p").slideToggle("slow");
-  })
+  });
 
-})
+});
