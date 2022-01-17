@@ -259,7 +259,7 @@ Admin booked  | admin approve users request to book event | users request is app
 # Deployment 
 
 Deployment
-Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application. Code Institute also provides a summary of similar process steps here : CI Cheat Sheet
+Detailed below are instructions on how to clone this project repository and the steps to configure and deploy the application. 
 
 How to Clone the Repository
 Create Application and Postgres DB on Heroku
@@ -331,7 +331,7 @@ Scroll down the page and choose to either Automatically Deploy each time changes
 The application can be run from the Application Configuration page by clicking on the Open App button.
 The live link for this project is (#HEROKU)
 
-#Final Deployment steps
+## Final Deployment steps
 
 Once code changes have been completed and tested on localhost, the application can be prepared for Heroku deployment as follows :
 
