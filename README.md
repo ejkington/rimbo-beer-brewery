@@ -227,15 +227,6 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * Too save space i only included 1 page of python validation but all code checks out without errors
 
 
-### Automated Testing
-
-#### Jest
-
-#### Jest results 
-
-#PIC OF JEST TEST
-
-
 # Browser Compatibility
 
 * Chrome DevTools was used to test the responsiveness of the application on different screen sizes. In addition, testing has been carried out on the following browsers :
