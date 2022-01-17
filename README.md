@@ -364,7 +364,7 @@ The logo in the nav bar was created on [https://www.logomaker.com/]
 
 ## Acknowledgments
 
-Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial
-My friends and family that suports me the best they can
+* Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial.
+* My friends and family that suports me the best they can
 
 
