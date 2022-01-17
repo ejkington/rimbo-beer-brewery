@@ -40,6 +40,3 @@ class Booked(models.Model):
     body = models.TextField()
     number_of_guests = models.IntegerField(choices=CHOICES, default=1)
     approved = models.IntegerField(choices=BOOKED, default=2)
-
-    def __str__(self):
-        return f"Comment {self.body} by {self.name}"

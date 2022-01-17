@@ -76,7 +76,7 @@ The website will consist of 4 separate pages, not including the register/logg in
 
 ### Navigation Bar
 
-![navbar](#)
+![navbar](https://github.com/ejkington/rimbo-beer-brewery/blob/93ec6f9f27101f70fd435db49048d216c474eb58/Readme/Images/Navbar.png)
 
 The navigation bar.
 The navigation links directs the user to the correct page of the website.
@@ -93,7 +93,7 @@ All images and navigation have an alt attributes. This is to make the site easie
 
 ### Footer
 
-![footer](#)
+![footer](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/footer.png)
 
 The footer consists of social media links and will open in a new tab.
 
@@ -106,8 +106,8 @@ I have included descriptions, author, and keywords into the head element to incr
 
 ###### Homepage.
 
-![index1](#)
-![index2](#)
+![index1](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/index1.png)
+![index2](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/index2.png)
 
 A image charrosel pictures from the brewery.
 The brewery motto.
@@ -115,7 +115,11 @@ Text that shows the love for beer and beer making above footer
 
 ###### Our beers.
 
-### PIC OF OURBEERS PAGE
+
+![ourbeers1](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers1.png)
+![ourbeers2](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers2.png)
+![ourbeers3](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers3.png)
+![ourbeers4](https://github.com/ejkington/rimbo-beer-brewery/blob/5bf7016539ec9d3985c5f55392fab067b90707b5/Readme/Images/ourbeers4.png)
 
 Showcasing pictures of the beers.
 The names of the different beers.
@@ -123,7 +127,7 @@ and a taste review when clicked used jQuery.
 
 ###### Events.
 
-### PIC OF EVENS PAGE
+![event](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/event.png)
 
 Showing the current events that the brewery has and when clicked redirects user to a detailed page of the event.
 paginated by 6
@@ -131,7 +135,7 @@ paginated by 6
 
 ###### Events Detail.
 
-### PIC OF EVENT DETAILS PAGE
+![eventdetail](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/eventdetail1.png)
 
 * Showing the details of the event clicked.
 * If not logged in a text is displaying prompting the user to logg in or register.
@@ -139,9 +143,13 @@ paginated by 6
 * Text diplaying "your booking is waiting approval if form is valid.
 * Submit button in the form
 
+![eventdetaillogedin](https://github.com/ejkington/rimbo-beer-brewery/blob/a61f664518673b41ae426a37ab2680e46f1973fd/Readme/Images/eventsdetaillogedin.png)
+
 ### Logg in and Out
 
-### PIC OF LOGIN PAGE
+![login](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/login.png)
+![logout](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/logout.png)
+![signup](https://github.com/ejkington/rimbo-beer-brewery/blob/671a343bfa8521396683b1a937d6d49656ef022f/Readme/Images/regrister.png)
 
 ###### Login / Logout
 
@@ -155,16 +163,20 @@ To sign in the user must provide a) a registered username and b) the password fo
 
 User Sign out
 
-### PIC OF LOGOUT
+
 A signed in user can sign out by clicking on the Sign out link on the navigation bar. The user simply needs to confirm the action by clicking on the Sign out button on the page. and an message is displayed that the user has signed out.
 
 ## Admin page
 
-#### PIC OF ADMINS PAGE
+![admin](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/admin1.png)
+![adminevent](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/adminevent.png)
+![adminbookings](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/adminbookings.png)
+
 
 * This page is for the admin to manage the bookings made by user and to create and manage events
-* Can be used to approve and disapprov bookings
+* Can be used to approve and disapprov bookings and send out emails to guests approved
 * Can be used to see how many users that have regristred too the site
+
 
 
 ## Technologies Used 
@@ -186,27 +198,33 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * [Bootstrap](https://getbootstrap.com/) - For fast and easy css styling
 * [jQuery](https://jquery.com/) - For easy and nice looking animation
 * [Django](https://www.djangoproject.com/) - Framework
-* [https://gunicorn.org/] - was used as the Web Server to run Django on Heroku
-* [https://pypi.org/project/dj-database-url/] - library used to allow database urls to connect to the postgres db
-* [https://pypi.org/project/psycopg2/] - database adapter used to support the connection to the postgres db
-* [https://cloudinary.com/] - used to store the images used by the application
-* [https://pypi.org/project/django-summernote/] - used to provide WYSIWYG editing on the event editing screen
-* [https://django-allauth.readthedocs.io/en/latest/index.html] - used for account registration and authentication
-* [https://django-crispy-forms.readthedocs.io/en/latest/] - used to simplify form rendering
-* [https://jquery.com/] - used to fade out alert messages and displaying text in ourbeers page
+* [Gunicorn](https://gunicorn.org/) - was used as the Web Server to run Django on Heroku
+* [Dj database](https://pypi.org/project/dj-database-url/) - library used to allow database urls to connect to the postgres db
+* [Psycopg2](https://pypi.org/project/psycopg2/) - database adapter used to support the connection to the postgres db
+* [Cloudinary](https://cloudinary.com/) - used to store the images used by the application
+* [Django-summernote](https://pypi.org/project/django-summernote/) - used to provide WYSIWYG editing on the event editing screen
+* [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - used for account registration and authentication
+* [Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - used to simplify form rendering
+* [Jquery](https://jquery.com/) - used to fade out alert messages and adding text in ourbeers page when image is clicked
 
 
 ## Testing
 
 ### Validator Testing
 
+[https://validator.w3.org/]
 * HTML Validating
+* As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator. HTML for the Django admin site pages was not edited so has not been validated here.
 
-* CSS Validating
+[https://jigsaw.w3.org/css-validator/]
+* CSS Validating ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/f412670cdc3a07752caa05262757e9d595bd9b5e/Readme/Validators/css_validator.png)
 
-* JavaScript Validation
+[https://jshint.com/]
+* JavaScript/jQuery Validation ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab5b89868dac3390424039591a0225944c32956b/Readme/Validators/jshintvalidator.png)
 
-* Python Validation
+[https://extendsclass.com/python-tester.html]
+* Python Validation ![python](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
+* Too save space i only included 1 page of python validation but all code checks out without errors
 
 
 ### Automated Testing
@@ -224,6 +242,27 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 Google Chrome version 9.0.4606.81 (64-bit)
 Firefox version 93.0 (64-bit)
 Microsoft Edge 94.0.992.38 (64-bit)
+
+# Manual Testing Test Cases and Results
+
+
+## Testing
+
+Test | Test action | Expected outcome      | Test outcome
+------- | ---------------- | ---------- | ---------:
+Navigation links  | Clicking the links | Directed to the right page | PASS
+Text under ourbeers images  |  Clicking the images        | the right text shows and dissapers when clicked again      | PASS
+Social media links   | Clicking the links | Taken to social media in a new tab    | PASS
+Form   | Filling in form | Required fields popup if not done correctly    | PASS
+Form   | Filling in form | Sends data passed to database    | PASS
+Adminpage   | login | loggs in to admins page    | PASS
+Add event   | adding event from admins page | adds event rendered on page    | PASS
+Delete event   | delete event | events gets deleted and removed from page    | PASS
+User signup  | Regrister new user | user gets data saved to database and user gets logged in   | PASS
+User login  | Filling in username and password | if correct data user gets signed in    | PASS
+User logout  | logout user | user gets loged out    | PASS
+Admin booked  | admin approve users request to book event | users request is approved    | PASS
+
 
 # Deployment 
 
@@ -317,8 +356,8 @@ Code
 Much of the coding and testing relies heavily on information in the "Hello Django" and "I Think Therefore I Blog" walkthroughs in the Code Institue Full Stack Frameworks module.
 
 [https://getbootstrap.com/docs/4.0/components/carousel/] - Information on how to implement charosel images
-[https://www.w3.org/]
-[https://getbootstrap.com/]
+[https://www.w3.org/] - Information about just about anything coding related
+[https://getbootstrap.com/] - easy and fast styling
 [https://docs.djangoproject.com/en/4.0/]
 The Slack comunity
 Tutor support
@@ -331,9 +370,9 @@ Google - What would i do without it
 All pictures for the site was taken from [https://unsplash.com/]
 The logo in the nav bar was created on [https://www.logomaker.com/]
 
-#Acknowledgments
+## Acknowledgments
 
-Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial, especially in the area of coding standards and best practice.
+Thank you to my mentor Brian Macharia for his continuing help and feedback. His advice and tips have been very beneficial
 My friends and family that suports me the best they can
 
 
