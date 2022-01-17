@@ -7,22 +7,19 @@ from .forms import BookingForm
 
 class EventList(generic.ListView):
     model = Event
-    queryset = Event.objects.filter(status=1).order_by("-created_on")
+    queryset = Event.objects.filter(status=1)
     template_name = 'event.html'
     paginate_by = 6
 
 
-"""
-Displays eventdetails page
-"""
-
-
 class EventDetail(View):
-
-    def get(self, request, slug, *args, **kwargs):
+    """
+    Displays eventdetails page
+    """
+    def get(self, request, slug):
         queryset = Event.objects.filter(status=1)
         event = get_object_or_404(queryset, slug=slug)
-        
+
         return render(
             request,
             'event-detail.html',
@@ -32,43 +29,40 @@ class EventDetail(View):
                 'booking_form': BookingForm()
             },
         )
-    
-    def post(self, request, slug, *args, **kwargs):
+
+    def post(self, request, slug):
         queryset = Event.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         event = get_object_or_404(queryset, slug=slug)
         booking_form = BookingForm(data=request.POST)
-        
+
         if booking_form.is_valid():
             post.event = post
             booking_form.save()
         else:
             booking_form = BookingForm
-            
+                           
         return render(
             request,
             "event-detail.html",
             {
                 "post": post,
-                "event": event,     
+                "event": event,
                 "isbooked": True,
                 "booking_form": booking_form,
             },
         )
 
-"""
-View for rendering our beers page
-"""
-
 
 class OurBeersView(TemplateView):
+    """
+    View for rendering our beers page
+    """
     template_name = 'our-beers.html'
 
 
-"""
-view for rendering index page
-"""
-
-
 class IndexView(TemplateView):
+    """
+    view for rendering index page
+    """
     template_name = 'index.html'
