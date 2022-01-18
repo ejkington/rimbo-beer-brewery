@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django_summernote',
     'cloudinary',
     'crispy_forms',
-    'bootstrap4',
     'events',
     
 ]
