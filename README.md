@@ -1,8 +1,8 @@
 # Rimbo Beer Brewery events
 
-[Link to Live Website](#)
+[Link to Live Website](https://rimbo-beer-brewery-events.herokuapp.com/)
 
-[GitHub Repo](#)
+[GitHub Repo](https://github.com/ejkington/rimbo-beer-brewery)
 
 
 ### PIC OF RESPONSIVE SITE
