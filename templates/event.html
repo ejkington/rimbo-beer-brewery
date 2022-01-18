@@ -17,9 +17,10 @@
                             <div class="image-container">
                                 {% if 'placeholder' in event.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094">
+                                    src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094"
+                                    alt="Image from cloud">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ event.featured_image.url }}">
+                                <img class="card-img-top" alt="featured image" src=" {{ event.featured_image.url }}">
                                 {% endif %}
                             </div>
                             <a href="{% url 'event-detail' event.slug  %}" class="post-link">
@@ -27,7 +28,7 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h5">{{ event.created_on }}
-                                
+
                             </p>
                         </div>
                     </div>

@@ -33,7 +33,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["rimbo-beer-brewery-events.herokuapp.com", "localhost"]
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+# X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # Application definition
