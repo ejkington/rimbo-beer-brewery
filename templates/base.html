@@ -2,19 +2,21 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-    <title>Rimbo Beer Brewery</title>
+<title>Rimbo Beer Brewery</title>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -28,8 +30,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'index' %}"><img class="logo-image" src='https://github.com/ejkington/rimbo-beer-brewery-ms1/blob/master/assets/images/Rimbo-logo.png?raw=true'></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            <a class="navbar-brand" href="{% url 'index' %}"><img class="logo-image"
+                    src='https://github.com/ejkington/rimbo-beer-brewery-ms1/blob/master/assets/images/Rimbo-logo.png?raw=true'></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,24 +64,23 @@
         </div>
     </nav>
 
-     <!--Message tags for when user logs in, out and register -->
+    <!--Message tags for when user logs in, out and register -->
 
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 {% for message in messages %}
-                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg"
-                role="alert">
-                {{ message | safe }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-lable="Close">
-                </button>
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-lable="Close">
+                    </button>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-    {% block event %}       
-     <!-- event content -->
+    {% block event %}
+    <!-- event content -->
     {% endblock event %}
     <main class="flex-shrink-0 main-bg">
         {% block content %}
@@ -93,35 +95,42 @@
     <footer id="footer">
         <ul class="social-networks">
             <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visits our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visits our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visits our twitter page page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visits our twitter page page (opens in a new tab)"><i
+                        class="fab fa-twitter-square"></i></a>
             </li>
             <li>
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visits our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visits our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visits our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visits our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
             </li>
         </ul>
     </footer>
     <script>
-        setTimeout(function() {
+        setTimeout(function () {
             let messages = document.getElementById('msg');
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 3000);
     </script>
     <!-- font awesome-->
-<script src="https://kit.fontawesome.com/aecfa50529.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aecfa50529.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
-  {% block script %}
-  {% endblock %}
+    {% block script %}
+    {% endblock %}
 </body>
 
 </html>
