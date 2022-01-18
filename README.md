@@ -1,8 +1,8 @@
 # Rimbo Beer Brewery events
 
-[Link to Live Website](#)
+[Link to Live Website](https://rimbo-beer-brewery-events.herokuapp.com/)
 
-[GitHub Repo](#)
+[GitHub Repo](https://github.com/ejkington/rimbo-beer-brewery)
 
 
 ### PIC OF RESPONSIVE SITE
@@ -215,6 +215,11 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 [https://validator.w3.org/]
 * HTML Validating
 * As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator. HTML for the Django admin site pages was not edited so has not been validated here.
+![HTML-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab0f0a4957d80e54180bc7d5e0fa5313ea65ddf6/Readme/Validators/htmlvalidator1.png)
+![HTML-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab0f0a4957d80e54180bc7d5e0fa5313ea65ddf6/Readme/Validators/htmlvalidator2.png)
+
+* The error for the Head tag seems to be none existant, iv looked thru the code and can only find 1 head tag 
+
 
 [https://jigsaw.w3.org/css-validator/]
 * CSS Validating ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/f412670cdc3a07752caa05262757e9d595bd9b5e/Readme/Validators/css_validator.png)
@@ -254,6 +259,19 @@ User signup  | Regrister new user | user gets data saved to database and user ge
 User login  | Filling in username and password | if correct data user gets signed in    | PASS
 User logout  | logout user | user gets loged out    | PASS
 Admin booked  | admin approve users request to book event | users request is approved    | PASS
+
+### Adding and commiting files
+
+To add files to the repository take the following steps
+
+In the command line type -
+        git add .  
+        git commit -m "This is being committed"
+        git push
+
+To add all new files or modified file use " ."  - To add a single file use the pathway to the file eg .index.html  or assets/css/style.css
+When committing make sure your comments are clear about what changes have been made. 
+Pushing will send your work to the repository
 
 
 # Deployment 
@@ -342,6 +360,15 @@ Push files to GitHub
 In the Heroku Config Vars for the application delete this environment variable : DISABLE_COLLECTSTATIC
 On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch
 
+### Content
+
+- The text for the Home page was writen by the developer
+- The text for the tast of the beer was taken from https://www.tastings.com/
+- the page is made up and not a real brewery.
+
+### Media 
+
+- The images  used on all the pages was taken from https://www.istockphoto.com/
 
 # Credits
 Code
