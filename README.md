@@ -260,6 +260,19 @@ User login  | Filling in username and password | if correct data user gets signe
 User logout  | logout user | user gets loged out    | PASS
 Admin booked  | admin approve users request to book event | users request is approved    | PASS
 
+### Adding and commiting files
+
+To add files to the repository take the following steps
+
+In the command line type -
+        git add .  
+        git commit -m "This is being committed"
+        git push
+
+To add all new files or modified file use " ."  - To add a single file use the pathway to the file eg .index.html  or assets/css/style.css
+When committing make sure your comments are clear about what changes have been made. 
+Pushing will send your work to the repository
+
 
 # Deployment 
 
@@ -347,6 +360,15 @@ Push files to GitHub
 In the Heroku Config Vars for the application delete this environment variable : DISABLE_COLLECTSTATIC
 On the Heroku dashboard go to the Deploy tab for the application and click on deploy branch
 
+### Content
+
+- The text for the Home page was writen by the developer
+- The text for the tast of the beer was taken from https://www.tastings.com/
+- the page is made up and not a real brewery.
+
+### Media 
+
+- The images  used on all the pages was taken from https://www.istockphoto.com/
 
 # Credits
 Code
