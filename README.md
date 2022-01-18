@@ -215,6 +215,11 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 [https://validator.w3.org/]
 * HTML Validating
 * As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator. HTML for the Django admin site pages was not edited so has not been validated here.
+![HTML-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab0f0a4957d80e54180bc7d5e0fa5313ea65ddf6/Readme/Validators/htmlvalidator1.png)
+![HTML-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/ab0f0a4957d80e54180bc7d5e0fa5313ea65ddf6/Readme/Validators/htmlvalidator2.png)
+
+* The error for the Head tag seems to be none existant, iv looked thru the code and can only find 1 head tag 
+
 
 [https://jigsaw.w3.org/css-validator/]
 * CSS Validating ![CSS-validation](https://github.com/ejkington/rimbo-beer-brewery/blob/f412670cdc3a07752caa05262757e9d595bd9b5e/Readme/Validators/css_validator.png)
