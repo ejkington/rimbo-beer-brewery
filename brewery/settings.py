@@ -30,11 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["brewery.herokuapp.com/", "localhost"]
+ALLOWED_HOSTS = ["rimbo-beer-brewery-events.herokuapp.com/", "localhost"]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-CSRF_TRUSTED_ORIGINS = ['http://*.127.0.0.1']
 
 # Application definition
 
