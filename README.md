@@ -175,7 +175,12 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * Can be used to approve and disapprov bookings and send out emails to guests approved
 * Can be used to see how many users that have regristred too the site
 
+## Left to implent / Possible implentations
 
+* A way for the user to rate beer and write own rewiews
+* A way for the user to view their old bookings and booked events
+* A way for user to order the beer directly from the brewery, (or as it is in sweden to Systembolaget)
+* 
 
 ## Technologies Used 
 
@@ -190,7 +195,7 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 
 ## Design, Librarys, Frameworks
 
-* [Google fonts](https://fonts.google.com/) - For styling the typography (roboto)
+* [Google fonts](https://fonts.google.com/) - For styling the typography
 * [Font Awesome](https://fontawesome.com/) - for social media icons
 * [Beautifer](https://beautifier.io/) - Allowing me beautify my code.
 * [Bootstrap](https://getbootstrap.com/) - For fast and easy css styling
@@ -229,6 +234,15 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * Python Validation ![python1](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
 * ![python2](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python2.png)
 * ![python3](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python3.png)
+
+## Bugs 
+
+* There are no know bugs
+
+## Bugs when developing
+
+* Mainly due to misspelled code or forgeting correct syntax
+* bug when the form dident send information to database, this was solved due too that i had code conflicting the form
 
 
 # Browser Compatibility
