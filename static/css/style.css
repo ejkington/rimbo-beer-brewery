@@ -14,7 +14,6 @@
     width:100%;
     margin-right: 100px;
     height: 130px;
-    position: absolute;
 }
 
 .social-networks {
@@ -67,6 +66,10 @@ body {
     border: none;
     background-color: transparent;
     padding-bottom: 86px;
+}
+
+.card-title {
+    text-align: center;
 }
 
 .image-container {
