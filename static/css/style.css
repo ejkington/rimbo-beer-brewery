@@ -14,11 +14,11 @@
     width:100%;
     margin-right: 100px;
     height: 130px;
+    position: absolute;
 }
 
 .social-networks {
     text-align: center;
-    width: 93%;
     height: 100%;
 }
 
