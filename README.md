@@ -51,25 +51,26 @@ have users book and order products from the site, and to store information about
 #### What a user may want 
 * To be able to find links to social media pages.
 * To see examples of previous work carried out.
-* To be able to chat with someone online.
+* Order products frome site
+* Write own rewiews and or rate products
 * How it works - from start to finish.
 
 
 #### As a developer / business I expect
 * To provide information about Rimbo beer brewery.
-* To provide an easy way for new and existing clients to contact us.
 * To provide an easy to navigate website with links that work as expected.
-* To encourage clients to contact us. 
-* Customers to book events 
+* To encourage clients to book events. 
+* To see our products and to get interested in our products
 
 
 ## Structure
-The website will consist of 4 separate pages, not including the register/logg in and logg out pages
+The website will consist of 4 separate pages, not including the register/login and logout pages
 * A home page with the brewery moto and appealing pictures of beer styles.
-* A our beers page showing what kind of beers the brewery makes, and what to expect when tasting it.
+* A our beers page showing what kind of beers the brewery makes, and a rewiew of the beer
 * A events page and appealing pictures of the event
 * A events detail page, showing the details of the event clicked
 * A Form too book an event
+* login and signup, and if user is signed in a logout in the navbar
 
 
 ## Features across all pages.
@@ -80,7 +81,7 @@ The website will consist of 4 separate pages, not including the register/logg in
 
 The navigation bar.
 The navigation links directs the user to the correct page of the website.
-When the rimbo beer brewery logo is pressed it takes the user to the main page.
+When the rimbo beer brewery logo is clicked it takes the user to the main page.
 On larger screens the navigation bar is horizontal and too the left. on smaller screens it displays as a hamburger button with a list of all pages.
 
 ### Responsiveness
@@ -96,10 +97,7 @@ All images and navigation have an alt attributes. This is to make the site easie
 ![footer](https://github.com/ejkington/rimbo-beer-brewery/blob/8e365d8a232e409f71d2a2dc00467f3ff66436f9/Readme/Images/footer.png)
 
 The footer consists of social media links and will open in a new tab.
-
-
-### Meta data
-I have included descriptions, author, and keywords into the head element to increase traffic to the website. I have also labelled each page differently so that if the user has multiple tabs open it is easy to recognise each tab.
+as the company doesent exists the links goes to the main site of the logo clicked
 
 
 ## Features specific to page
@@ -177,7 +175,12 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * Can be used to approve and disapprov bookings and send out emails to guests approved
 * Can be used to see how many users that have regristred too the site
 
+## Left to implent / Possible implentations
 
+* A way for the user to rate beer and write own rewiews
+* A way for the user to view their old bookings and booked events
+* A way for user to order the beer directly from the brewery, (or as it is in sweden to Systembolaget)
+* 
 
 ## Technologies Used 
 
@@ -192,7 +195,7 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 
 ## Design, Librarys, Frameworks
 
-* [Google fonts](https://fonts.google.com/) - For styling the typography (roboto)
+* [Google fonts](https://fonts.google.com/) - For styling the typography
 * [Font Awesome](https://fontawesome.com/) - for social media icons
 * [Beautifer](https://beautifier.io/) - Allowing me beautify my code.
 * [Bootstrap](https://getbootstrap.com/) - For fast and easy css styling
@@ -231,6 +234,15 @@ A signed in user can sign out by clicking on the Sign out link on the navigation
 * Python Validation ![python1](https://github.com/ejkington/rimbo-beer-brewery/blob/58649f1bd1ff517bb02d59e01d59250b62f43c4e/Readme/Validators/python1.png)
 * ![python2](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python2.png)
 * ![python3](https://github.com/ejkington/rimbo-beer-brewery/blob/d6eef9608437c9e733c4736b22ee6491a1ecf062/Readme/Validators/python3.png)
+
+## Bugs 
+
+* There are no know bugs
+
+## Bugs when developing
+
+* Mainly due to misspelled code or forgeting correct syntax
+* bug when the form dident send information to database, this was solved due too that i had code conflicting the form
 
 
 # Browser Compatibility
