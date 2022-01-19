@@ -64,7 +64,7 @@ have users book and order products from the site, and to store information about
 
 
 ## Structure
-The website will consist of 4 separate pages, not including the register/logg in and logg out pages
+The website will consist of 4 separate pages, not including the register/login and logout pages
 * A home page with the brewery moto and appealing pictures of beer styles.
 * A our beers page showing what kind of beers the brewery makes, and what to expect when tasting it.
 * A events page and appealing pictures of the event
