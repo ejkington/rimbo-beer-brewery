@@ -5,8 +5,6 @@
 [GitHub Repo](https://github.com/ejkington/rimbo-beer-brewery)
 
 
-### PIC OF RESPONSIVE SITE
-
 
 ## About 
 
