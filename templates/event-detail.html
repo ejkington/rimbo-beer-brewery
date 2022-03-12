@@ -6,19 +6,22 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title -->
-                <h1 class="post-title">{{ event.title }}</h1>
-                
-                
-            </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in post.featured_image.url %}
-                <img src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094" alt="stock image" width="100%">
-                {% else %}
-                <img src=" {{ post.featured_image.url }}" alt="featured image" width="100%">
-                {% endif %}
+            <div class="col-md-12 masthead-text">
+                <div class="d-none d-md-block col-md-12 masthead-image">
+                    <div class="d-md-block col-md-12 align-left">
+                        <!-- Post title -->
+                        <h1 class="post-title">{{ event.title }}</h1>
+
+                        <!-- The featured image URL goes in the src attribute -->
+                        {% if "placeholder" in post.featured_image.url %}
+                        <img src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094"
+                            alt="stock image" width="100%">
+                        {% else %}
+                        <img class="card-img-top details-img" alt="featured image"
+                            src=" {{ event.featured_image.url }}">
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -42,13 +45,13 @@
                 {% if user.is_authenticated %}
 
                 <h2 class="booking-h2">Book this event</h2>
-                
+
                 <!--Form for booking an event -->
 
                 <form method='post' style="margin-top: 1.3em;">
                     {% csrf_token %}
                     {{ booking_form | crispy }}
-                   
+
                     <button type='submit' value="submit" class='btn btn-signup btn-lg'>Book now</button>
                 </form>
                 {% else %}
@@ -62,9 +65,6 @@
                 </div>
                 {% endif %}
                 {% endif %}
-
-               
-            
             </div>
         </div>
     </div>

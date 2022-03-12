@@ -41,7 +41,6 @@ class EventDetail(View):
             booking_form.save()
         else:
             booking_form = BookingForm
-                           
         return render(
             request,
             "event-detail.html",

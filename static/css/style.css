@@ -10,8 +10,8 @@
     background-color: lightgoldenrodyellow;
     padding-top: 2px;
     padding-bottom: 0px;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    width: 100%;
     margin-right: 100px;
     height: 130px;
 }
@@ -32,6 +32,9 @@
     color: #363030;
 }
 
+.details-img {
+    width: 100%;
+}
 
 /* from template */
 
@@ -95,7 +98,6 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
     width: 100%;
 }
 
@@ -124,7 +126,7 @@ body {
 }
 
 .post-title {
-    margin-top: 20%;
+    margin-top: 5%;
     margin-left: 5%;
 }
 
@@ -271,7 +273,7 @@ p {
 }
 
 /* event detail page */
-.booking-h2 { 
+.booking-h2 {
     text-align: center;
     text-decoration: underline;
 }
@@ -287,9 +289,7 @@ p {
     display: block;
 }
 
-@media screen and (max-width:375px) {
-
-}
+@media screen and (max-width:375px) {}
 
 .underline {
     display: none;
