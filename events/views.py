@@ -31,9 +31,8 @@ class EventDetail(View):
         )
 
     def post(self, request, slug):
-        queryset = Event.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        event = get_object_or_404(queryset, slug=slug)
+        post = get_object_or_404(Event, slug=slug)
+        event = get_object_or_404(Event, slug=slug)
         booking_form = BookingForm(data=request.POST)
 
         if booking_form.is_valid():

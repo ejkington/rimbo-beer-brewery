@@ -1,0 +1,174 @@
+[{
+    "model": "events.event",
+    "pk": 3,
+    "fields": {
+        "title": "Brewery Tour",
+        "slug": "brewery-tour",
+        "featured_image": "image/upload/v1641420681/sdbf3gvx6vbtnlnpcflb.jpg",
+        "description": "<p>Its time again for the Full Tour of the brewery!</p><p><br></p><p>Approx 2 hours of beer touring and tasting of all beers that we make ending with a 3 course dinner at the brewery.</p><p><br></p><p>Spots available for this event is 10 so book it fast before they go.</p><p><br></p><p>// Rimbo Beer Brewery Crew</p>",
+        "created_on": "2022-01-05T22:11:21.655Z",
+        "start_time": "2022-02-01T20:00:00Z",
+        "end_time": "2022-02-01T22:00:00Z",
+        "status": 1
+    }
+}, {
+    "model": "events.event",
+    "pk": 4,
+    "fields": {
+        "title": "Beer tasting",
+        "slug": "beer-tasting",
+        "featured_image": "image/upload/v1641555865/ifpu992ooedcn2njhhhl.jpg",
+        "description": "<p>Its time this is a one time offer to try our new secret brew</p>",
+        "created_on": "2022-01-07T11:44:25.549Z",
+        "start_time": "2022-01-20T20:00:00Z",
+        "end_time": "2022-01-20T21:00:00Z",
+        "status": 1
+    }
+}, {
+    "model": "events.event",
+    "pk": 5,
+    "fields": {
+        "title": "test",
+        "slug": "test",
+        "featured_image": "image/upload/v1641892233/uzcqbtl87t3i68serjzq.jpg",
+        "description": "<p><strong style=\"margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">Lorem Ipsum</strong><span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span><br></p>",
+        "created_on": "2022-01-11T09:10:33.754Z",
+        "start_time": "2022-01-11T09:10:27Z",
+        "end_time": "2022-01-11T09:10:28Z",
+        "status": 1
+    }
+}, {
+    "model": "events.event",
+    "pk": 6,
+    "fields": {
+        "title": "beer for life",
+        "slug": "beer-for-life",
+        "featured_image": "image/upload/v1647094694/wybt6qywk7zyqxok6rox.jpg",
+        "description": "<p>hello</p>",
+        "created_on": "2022-03-12T14:18:14.393Z",
+        "start_time": "2022-03-12T14:18:01Z",
+        "end_time": "2022-03-12T14:18:03Z",
+        "status": 1
+    }
+}, {
+    "model": "events.booked",
+    "pk": 33,
+    "fields": {
+        "booking": 5,
+        "name": "admin",
+        "email": "Fareborg@hotmail.com",
+        "body": "a",
+        "number_of_guests": 2,
+        "approved": 1
+    }
+}, {
+    "model": "events.booked",
+    "pk": 34,
+    "fields": {
+        "booking": 5,
+        "name": "admin",
+        "email": "Fareborg@hotmail.com",
+        "body": "22",
+        "number_of_guests": 2,
+        "approved": 1
+    }
+}, {
+    "model": "events.booked",
+    "pk": 35,
+    "fields": {
+        "booking": 5,
+        "name": "admin",
+        "email": "",
+        "body": "",
+        "number_of_guests": 5,
+        "approved": 2
+    }
+}, {
+    "model": "events.booked",
+    "pk": 36,
+    "fields": {
+        "booking": 5,
+        "name": "Niklas Tommy Färeborg",
+        "email": "Fareborg@hotmail.com",
+        "body": "",
+        "number_of_guests": 2,
+        "approved": 2
+    }
+}, {
+    "model": "events.booked",
+    "pk": 37,
+    "fields": {
+        "booking": 5,
+        "name": "Åke",
+        "email": "Rovhatt@hejsan.se",
+        "body": "",
+        "number_of_guests": 10,
+        "approved": 2
+    }
+}, {
+    "model": "events.booked",
+    "pk": 38,
+    "fields": {
+        "booking": 5,
+        "name": "Niklas Tommy Färeborg",
+        "email": "Fareborg@hotmail.se",
+        "body": "",
+        "number_of_guests": 5,
+        "approved": 2
+    }
+}, {
+    "model": "events.booked",
+    "pk": 39,
+    "fields": {
+        "booking": 3,
+        "name": "Test",
+        "email": "testing@testing.com",
+        "body": "",
+        "number_of_guests": 3,
+        "approved": 0
+    }
+}, {
+    "model": "events.booked",
+    "pk": 40,
+    "fields": {
+        "booking": 4,
+        "name": "Test",
+        "email": "garakow576@ineedsa.com",
+        "body": "",
+        "number_of_guests": 1,
+        "approved": 0
+    }
+}, {
+    "model": "events.booked",
+    "pk": 41,
+    "fields": {
+        "booking": 4,
+        "name": "Niklas Tommy Färeborg",
+        "email": "Fareborg@hotmail.com",
+        "body": "",
+        "number_of_guests": 1,
+        "approved": 0
+    }
+}, {
+    "model": "events.booked",
+    "pk": 47,
+    "fields": {
+        "booking": 5,
+        "name": "Niklas Tommy Färeborg",
+        "email": "Fareborg@hotmail.com",
+        "body": "",
+        "number_of_guests": 1,
+        "approved": 0
+    }
+}, {
+    "model": "events.booked",
+    "pk": 60,
+    "fields": {
+        "booking": 6,
+        "name": "Niklas Tommy Färeborg",
+        "email": "Fareborg@hotmail.com",
+        "body": "",
+        "number_of_guests": 1,
+        "approved": 0
+    }
+}]

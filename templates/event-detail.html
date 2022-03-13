@@ -9,10 +9,13 @@
             <div class="col-md-12 masthead-text">
                 <div class="d-none d-md-block col-md-12 masthead-image">
                     <div class="d-md-block col-md-12 align-left">
+
                         <!-- Post title -->
+
                         <h1 class="post-title">{{ event.title }}</h1>
 
                         <!-- The featured image URL goes in the src attribute -->
+
                         {% if "placeholder" in post.featured_image.url %}
                         <img src="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094"
                             alt="stock image" width="100%">
@@ -33,9 +36,9 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <p class="card-text ">
-                    {{ event.description | safe }}
-                </p>
+
+                {{ event.description | safe }}
+
                 {% if booking_form.is_valid %}
                 <div class="alert alert-success" role="alert">
                     Your booking is awaiting approval, check your email for confirmation
@@ -51,7 +54,6 @@
                 <form method='post' style="margin-top: 1.3em;">
                     {% csrf_token %}
                     {{ booking_form | crispy }}
-
                     <button type='submit' value="submit" class='btn btn-signup btn-lg'>Book now</button>
                 </form>
                 {% else %}
