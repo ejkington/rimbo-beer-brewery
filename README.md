@@ -71,6 +71,21 @@ The website will consist of 4 separate pages, not including the register/login a
 * login and signup, and if user is signed in a logout in the navbar
 
 
+## WireFrames
+### Index
+![index](Readme/Images/wireframes/index.png)
+
+### ourbeers
+![ourbeers](Readme/Images/wireframes/ourbeers.png)
+
+
+### event
+![event](Readme/Images/wireframes/event.png)
+
+
+### eventdetails
+![detail](Readme/Images/wireframes/events_details.png)
+
 ## Features across all pages.
 
 ### Navigation Bar
