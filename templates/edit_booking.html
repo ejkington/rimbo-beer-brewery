@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<!--Form for edit an booking -->
+
+<form method='post' style="margin-top: 1.3em;">
+    {% csrf_token %}
+    {{ booking_form | crispy }}
+    <button type='submit' value="submit" class='btn btn-signup btn-lg'>Update</button>
+</form>
+
+<div class="underline-detail"></div>
+{% endblock %}

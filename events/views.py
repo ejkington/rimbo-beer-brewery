@@ -22,7 +22,7 @@ class EventDetail(View):
 
         return render(
             request,
-            'event-detail.html',
+            'event_detail.html',
             {
                 'event': event,
                 "isbooked": False,
@@ -42,11 +42,27 @@ class EventDetail(View):
             booking_form = BookingForm
         return render(
             request,
-            "event-detail.html",
+            "event_detail.html",
             {
                 "post": post,
                 "event": event,
                 "isbooked": True,
+                "booking_form": booking_form,
+            },
+        )
+
+
+class EditBookingView(TemplateView):
+    model = Booked
+    template_name = 'edit_booking.html'
+    
+    def editbooking(self, request):
+        booking_form = BookingForm(data=request.POST)
+
+        return render(
+            request,
+            "edit_booking.html",
+            {
                 "booking_form": booking_form,
             },
         )

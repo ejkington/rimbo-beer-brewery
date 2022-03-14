@@ -9,3 +9,13 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booked
         fields = ('name', 'email', 'booking', 'number_of_guests',)
+
+
+class Editbooking(forms.ModelForm):
+    """ 
+    Form for editing users booking
+    """
+    class Meta:
+        model = Booked
+        fields = ('name', 'email', 'booking', 'number_of_guests',)
+    

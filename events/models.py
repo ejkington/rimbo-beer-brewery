@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+from django.contrib.auth.models import User
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -31,7 +32,8 @@ class Booked(models.Model):
     Model for Booked, Choices is the number
     of guests with a maximim of 6 guests bookable at time
     """
-    booking = models.ForeignKey(Event, null=True, blank=True, on_delete=models.CASCADE,
+    booking = models.ForeignKey(Event, null=True, blank=True,
+                                on_delete=models.CASCADE,
                                 related_name="booked")
     name = models.CharField(max_length=80)
     email = models.EmailField()

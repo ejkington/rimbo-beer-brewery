@@ -40,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'ourbeers' %}">Our Beer</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'our-beers' %}">Our Beer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'events' %}">Events</a>
@@ -48,6 +48,9 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'edit_booking' %}">Edit Booking</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
