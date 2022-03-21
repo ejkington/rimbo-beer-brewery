@@ -2,14 +2,46 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
+<p class="event-text">You are viewing events booked by <strong> {{user}} </strong>
+</p>
+{% if user.is_authenticated %}
 
-<!--Form for edit an booking -->
+<!--Form for editing an event -->
 
-<form method='post' style="margin-top: 1.3em;">
-    {% csrf_token %}
-    {{ booking_form | crispy }}
-    <button type='submit' value="submit" class='btn btn-signup btn-lg'>Update</button>
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                {% if booking_form.is_valid %}
+                <div class="alert alert-success" role="alert">
+                    Your update is awaiting approval, check your email for confirmation
+                </div>
+                {% else %}
 
-<div class="underline-detail"></div>
+                {% if user.is_authenticated %}
+
+                <!--Form for booking an event -->
+
+                <form method='post' style="margin-top: 1.3em;">
+                    {% csrf_token %}
+                    {{ booking_form | crispy }}
+                    <button type='submit' value="submit" class='btn btn-signup btn-lg'>Update</button>
+                </form>
+                {% else %}
+
+                <div class="underline-detail"></div>
+
+                <div class="not-validated-detail">
+                    <h3>
+                        Too edit or remove bookings please login above
+                    </h3>
+                </div>
+                {% endif %}
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

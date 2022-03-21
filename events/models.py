@@ -24,6 +24,9 @@ class Event(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        """
+        Meta for ordering events by created on
+        """
         ordering = ['-created_on']
 
 
@@ -32,7 +35,7 @@ class Booked(models.Model):
     Model for Booked, Choices is the number
     of guests with a maximim of 6 guests bookable at time
     """
-    booking = models.ForeignKey(Event, null=True, blank=True,
+    booking = models.ForeignKey(Event,
                                 on_delete=models.CASCADE,
                                 related_name="booked")
     name = models.CharField(max_length=80)

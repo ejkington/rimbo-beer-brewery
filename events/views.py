@@ -3,9 +3,14 @@ from django.views import generic, View
 from django.views.generic import TemplateView
 from .models import Event, Booked
 from .forms import BookingForm
+from django.contrib.auth.models import User
+from django.dispatch import receiver
 
 
 class EventList(generic.ListView):
+    """
+    displays all events 
+    """
     model = Event
     queryset = Event.objects.filter(status=1)
     template_name = 'event.html'
@@ -14,7 +19,7 @@ class EventList(generic.ListView):
 
 class EventDetail(View):
     """
-    Displays eventdetails page
+    Displays event details page
     """
     def get(self, request, slug):
         queryset = Event.objects.filter(status=1)
@@ -53,17 +58,27 @@ class EventDetail(View):
 
 
 class EditBookingView(TemplateView):
-    model = Booked
+    """
+    view for editing events booked by the user
+    """
     template_name = 'edit_booking.html'
     
-    def editbooking(self, request):
+    def editbooking(self, request, slug):
         booking_form = BookingForm(data=request.POST)
-
+        user = models.OneToOneField(User, on_delete=models.CASCADE)
+        event = get_object_or_404(booked=1)
+        
+        if booking_form.is_valid():
+            booking_form.save()
+        else:
+            booking_form = BookingForm
         return render(
             request,
             "edit_booking.html",
             {
-                "booking_form": booking_form,
+                "booking_form": BookingForm(),
+                "user": user,
+                "event": event,
             },
         )
 
