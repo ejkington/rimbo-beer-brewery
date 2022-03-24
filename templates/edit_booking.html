@@ -1,47 +1,37 @@
 {% extends 'base.html' %}
-{% block content %}
+
 
 {% load crispy_forms_tags %}
+{% block edit%}
 <p class="event-text">You are viewing events booked by <strong> {{user}} </strong>
-</p>
-{% if user.is_authenticated %}
 
-<!--Form for editing an event -->
+    {% for Event in object_list %}
 
-<div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                {% if booking_form.is_valid %}
-                <div class="alert alert-success" role="alert">
-                    Your update is awaiting approval, check your email for confirmation
+    <div class="masthead">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-12 masthead-text">
+                    <div class="d-md-block d-sm-block d-xs-block col-md-12 masthead-image">
+                        <div class="d-md-block col-md-12 align-left">
+
+                            <!-- Post title -->
+                            <a href="{% url 'event_detail' Event.slug  %}" class="post-link">
+                                <h1 class="post-title-tumbnail card-title">{{ Event.title }}</h1>
+                            </a>
+                            <!-- The featured image URL goes in the src attribute -->
+
+                            {% if "placeholder" in post.featured_image.url %}
+                            <img class="thumbnail"
+                                ssrc="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094"
+                                alt="stock image" width="100%">
+                            {% else %}
+                            <img class="thumbnail" alt="featured image" src=" {{ Event.featured_image.url }}">
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-                {% else %}
-
-                {% if user.is_authenticated %}
-
-                <!--Form for booking an event -->
-
-                <form method='post' style="margin-top: 1.3em;">
-                    {% csrf_token %}
-                    {{ booking_form | crispy }}
-                    <button type='submit' value="submit" class='btn btn-signup btn-lg'>Update</button>
-                </form>
-                {% else %}
-
-                <div class="underline-detail"></div>
-
-                <div class="not-validated-detail">
-                    <h3>
-                        Too edit or remove bookings please login above
-                    </h3>
-                </div>
-                {% endif %}
-                {% endif %}
-                {% endif %}
             </div>
         </div>
     </div>
-</div>
-
-{% endblock %}
+    {% endblock edit %}

@@ -1,15 +1,16 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import TemplateView
+from django.views.generic.list import ListView
 from .models import Event, Booked
 from .forms import BookingForm
 from django.contrib.auth.models import User
-from django.dispatch import receiver
+from django.http import HttpResponseRedirect
 
 
 class EventList(generic.ListView):
     """
-    displays all events 
+    displays all events
     """
     model = Event
     queryset = Event.objects.filter(status=1)
@@ -57,31 +58,21 @@ class EventDetail(View):
         )
 
 
-class EditBookingView(TemplateView):
+class BookingList(ListView):
     """
-    view for editing events booked by the user
+    displays all booked events by user
     """
+    model = Event
+    queryset = Event.objects.filter(status=1)
     template_name = 'edit_booking.html'
+    context_object_name = 'book'
     
-    def editbooking(self, request, slug):
-        booking_form = BookingForm(data=request.POST)
-        user = models.OneToOneField(User, on_delete=models.CASCADE)
-        event = get_object_or_404(booked=1)
-        
-        if booking_form.is_valid():
-            booking_form.save()
-        else:
-            booking_form = BookingForm
-        return render(
-            request,
-            "edit_booking.html",
-            {
-                "booking_form": BookingForm(),
-                "user": user,
-                "event": event,
-            },
-        )
+    def get_context_data(self, **kwargs):
 
+        context = super().get_context_data(**kwargs)
+        Bookings = Event.objects.filter(slug=self.kwargs.get('slug'))
+
+        return context
 
 class OurBeersView(TemplateView):
     """

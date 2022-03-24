@@ -23,6 +23,7 @@ class Event(models.Model):
     end_time = models.DateTimeField()
     status = models.IntegerField(choices=STATUS, default=0)
 
+
     class Meta:
         """
         Meta for ordering events by created on
@@ -43,3 +44,4 @@ class Booked(models.Model):
     body = models.TextField(blank=True)
     number_of_guests = models.IntegerField(choices=NUMBER_OF_GUESTS, default=1)
     approved = models.IntegerField(choices=BOOKED, default=0)
+    user = models.ManyToManyField(User)
