@@ -5,7 +5,7 @@
 {% block edit%}
 <p class="event-text">You are viewing events booked by <strong> {{user}} </strong>
 
-    {% for Event in object_list %}
+    {% for booked in booked_events %}
 
     <div class="masthead">
         <div class="container">
@@ -13,19 +13,20 @@
                 <div class="col-md-12 masthead-text">
                     <div class="d-md-block d-sm-block d-xs-block col-md-12 masthead-image">
                         <div class="d-md-block col-md-12 align-left">
-
+                            {% if user.is_authenticated %}
                             <!-- Post title -->
-                            <a href="{% url 'event_detail' Event.slug  %}" class="post-link">
-                                <h1 class="post-title-tumbnail card-title">{{ Event.title }}</h1>
-                            </a>
-                            <!-- The featured image URL goes in the src attribute -->
+                            <h1 class="post-title-tumbnail card-title">{{ booked.booking.title }}</h1>
+                            <p class="event-text">Event starts @</p>
+                            <p class="event-text">
+                                {{ booked.booking.start_time }}</p>
 
-                            {% if "placeholder" in post.featured_image.url %}
-                            <img class="thumbnail"
-                                ssrc="https://media.istockphoto.com/photos/hispanic-female-craft-brewer-examining-beer-sample-picture-id1197894094"
-                                alt="stock image" width="100%">
+                            <button type='submit' value="submit" class='btn btn-danger btn-sm'>Delete</button>
+
+                            <!--Form for booking an event -->
+
+                            <button type='submit' value="submit" class='btn btn-warning btn-sm'>Edit</button>
                             {% else %}
-                            <img class="thumbnail" alt="featured image" src=" {{ Event.featured_image.url }}">
+                            <h1>Log in</h1>
                             {% endif %}
                             {% endfor %}
                         </div>

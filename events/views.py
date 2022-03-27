@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic import TemplateView
 from django.views.generic.list import ListView
@@ -62,17 +62,18 @@ class BookingList(ListView):
     """
     displays all booked events by user
     """
-    model = Event
-    queryset = Event.objects.filter(status=1)
     template_name = 'edit_booking.html'
-    context_object_name = 'book'
     
-    def get_context_data(self, **kwargs):
+    def get(self, request):
+        user = User.objects.get(username=request.user.username)
+        booked_events = Booked.objects.filter(user=user)
+        return render(request, self.template_name, {'booked_events': booked_events})
+    
+    def post(self, request):
+        booked = Booked.objects.get(id=booked_id)
+        user = User.objects.get(username=request.user.username)
+        booked.user.remove(User)
 
-        context = super().get_context_data(**kwargs)
-        Bookings = Event.objects.filter(slug=self.kwargs.get('slug'))
-
-        return context
 
 class OurBeersView(TemplateView):
     """
