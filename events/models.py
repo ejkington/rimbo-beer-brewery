@@ -43,4 +43,6 @@ class Booked(models.Model):
     body = models.TextField(blank=True)
     number_of_guests = models.IntegerField(choices=NUMBER_OF_GUESTS, default=1)
     approved = models.IntegerField(choices=BOOKED, default=0)
-    user = models.ManyToManyField(User)
+    user = models.ForeignKey(User,
+                             on_delete=models.CASCADE,
+                             related_name="user")

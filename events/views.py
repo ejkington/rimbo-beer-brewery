@@ -2,10 +2,9 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.views.generic import TemplateView
 from django.views.generic.list import ListView
+from django.contrib.auth.models import User
 from .models import Event, Booked
 from .forms import BookingForm
-from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect
 
 
 class EventList(generic.ListView):
@@ -43,6 +42,9 @@ class EventDetail(View):
 
         if booking_form.is_valid():
             post.event = post
+            if request.user.is_authenticated:
+                user = request.user
+            form = BookingForm(user)
             booking_form.save()
         else:
             booking_form = BookingForm
@@ -51,8 +53,10 @@ class EventDetail(View):
             "event_detail.html",
             {
                 "post": post,
+                "user": user,
                 "event": event,
                 "isbooked": True,
+                "form": form,
                 "booking_form": booking_form,
             },
         )
@@ -63,16 +67,17 @@ class BookingList(ListView):
     displays all booked events by user
     """
     template_name = 'edit_booking.html'
-    
+
     def get(self, request):
         user = User.objects.get(username=request.user.username)
         booked_events = Booked.objects.filter(user=user)
-        return render(request, self.template_name, {'booked_events': booked_events})
-    
-    def post(self, request):
-        booked = Booked.objects.get(id=booked_id)
-        user = User.objects.get(username=request.user.username)
-        booked.user.remove(User)
+        return render(
+            request,
+            self.template_name,
+            {
+                'booked_events': booked_events,
+                'user': user,
+            })
 
 
 class OurBeersView(TemplateView):
