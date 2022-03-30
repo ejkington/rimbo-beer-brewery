@@ -177,6 +177,13 @@ User Sign out
 
 A signed in user can sign out by clicking on the Sign out link on the navigation bar. The user simply needs to confirm the action by clicking on the Sign out button on the page. and an message is displayed that the user has signed out.
 
+### Booked events list
+
+When a user books an event the information of the event is displayed with time and title
+
+![edit](Readme/Images/edit.png)
+
+
 ## Admin page
 
 ![admin](https://github.com/ejkington/rimbo-beer-brewery/blob/a668a8335d16a8313d7b460209158093b330c570/Readme/Images/admin1.png)
