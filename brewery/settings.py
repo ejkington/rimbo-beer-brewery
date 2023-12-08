@@ -29,10 +29,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["rimbo-beer-brewery-events.herokuapp.com", "localhost"]
-
+ALLOWED_HOSTS = ["rimbo-beer-brewery-events.herokuapp.com", "localhost", "8000-red-seahorse-rgyuwsus.ws-eu106.gitpod.io"]
+print(os.environ.get("DATABASE_URL"))
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
